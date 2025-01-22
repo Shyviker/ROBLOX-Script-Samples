@@ -14,6 +14,7 @@ local codeList = {
 }
 local currentTime = DateTime.now()
 
+-- Server receives code after localPlayer invokes the codeFunc
 codeFunc.OnServerInvoke = function(player, code)
 	code = code:lower() -- In this case, I want caps to have no effect on codes
 	currentTime = DateTime.now() -- Refresh time
