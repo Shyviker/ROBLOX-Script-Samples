@@ -1,4 +1,5 @@
 -- Simple loading screen when player joins the experience. It waits for the assets to load before allowing the player to view game content.
+-- Is a LocalScript located at ReplicatedFirst
 
 local repFirst = game:GetService("ReplicatedFirst")
 local contentProvider = game:GetService("ContentProvider")
