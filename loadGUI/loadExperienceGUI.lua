@@ -40,3 +40,9 @@ endTween:Play()
 
 endTween.Completed:Wait()
 clonedGui:Destroy()
+
+-- Enable other GUI after the load screen is gone
+
+for _, gui in playerGui do
+	gui.Enabled = true
+end
